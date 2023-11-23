@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV Generator</title>
+</head>
+<body>
+    <div class="wrapper fw">
+
+<!-- ---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+                            Front End
+----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- -->
+   
+        <div class="frontend ">
+
+            <header class="header b2">
+                    <h2 class="h2 center">CV Generator</h2>
+                    <!-- <p class="p center">Please Fill the form correctly and generate your own CV</p> -->
+            </header>
+
+        <div class="form">
+
+<!----------------------------------Personal Inormation----------------------------->
+           
+            <fieldset class="field b2">
+                <legend class="legent ">Personal Information</legend>
+
+                <div class="formFields">
+                    
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="first Name">First Name</label>
+                            <input type="text" name='fname' class="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="grid">
+                            <label for="Last Name">Last Name</label>
+                            <input type="text" name='lname' class="lname"  placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="Email">Email Address</label>
+                            <input type="email" name="email" class="email" placeholder="Email Address">
+                        </div>
+
+                        <div class="grid">
+                            <label for="Last Name">Phone Number</label>
+                            <input type="tel" name="number" class="number" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="Gender">Gender</label>
+
+                        </div>
+
+                        <div class="grid2">
+                            <div class="grid2">
+                                <label for="Gender">Male</label>
+                                <input type="radio" name="gender" value="male" class="mgender gender">
+                            </div>
+                            <div class="grid2">
+                                <label for="Gender">Female</label>
+                                <input type="radio" name="gender" value="female" class="fgender gender">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="Date of Birth">Date of Birth</label>
+                        </div>
+
+                        <div class="grid">
+                            <input type="date" id="birth" name="birth" class="birth" placeholder="Date of Birth" >
+                        </div>
+                    </div>
+
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="Nationality">Nationality</label>
+                        </div>
+
+                        <div class="grid">
+                            <select class="nationality">
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="India">India</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </fieldset>
+
+<!----------------------------------Previous Destination----------------------------->
+
+            <fieldset class="field b2">
+                <legend class="legent ">Previous Destination</legend>
+
+                <div class="formFields">
+
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="Company Name">Company Name</label>
+                            <input type="text" name="company" class="company" placeholder="Company Name">
+                        </div>
+                        <div class="grid">
+                            <label for="Destination">Destination</label>
+                            <input type="text" placeholder="Destination" name="destination" class="destination">
+                        </div>
+                    </div>
+
+                    <div class="grid2">
+                        <div class="grid">
+                            <label for="From Date">From</label>
+                            <input type="date" name="from" class="from">
+                        </div>
+                        <div class="grid">
+                            <label for="To Date">To</label>
+                            <input type="date" name="to" class="to">
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+
+<!----------------------------------Computer Skills----------------------------->
+
+            <fieldset class="field b2">
+                <legend class="legent ">Computer Skills</legend>
+
+                <div class="formFields">
+
+                    <div class="grid3">
+                        <label for="Programming Languages">Programming Languages</label>
+                        <input type="text" name="planguage" class="planguage" placeholder="Languages" name="selectLanguage">
+                        <select class="plevel">
+                            <option value="Basic">Basic</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="grid3 buttons computerkillsbuttons">
+
+                        <div>
+                           
+                        </div>
+                        <div class="removeLanguage">
+                            <button class="addPLanguage">Remove Language</button>
+                        </div>
+                        <div class="addLanguage">
+                            <button class="removePLanguage">Add Language</button>
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+
+
+<!----------------------------------Other Skills----------------------------->
+
+            <fieldset class="field b2">
+                <legend class="legent ">Other Skills</legend>
+
+                <div class="formFields">
+                    <div class="grid4">
+                        <div class="grid languageField">
+                            <label for="Languages">Languages</label>
+                            <input type="text"  class="language" placeholder="Language">
+                        </div>
+                        <select class="comprehension">
+                            <option value="Comprehension">Comprehension</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>                        
+                        <select class="writing">
+                            <option value="Writting">Writting</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                        <select class="reading">
+                            <option value="Reading">Reading</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="grid4 buttons otherkillsbuttons">
+
+                        <div class="removeLanguage">
+                            <button class="removeLanguage">Remove Language</button>
+                        </div>
+                        <div class="addLanguage">
+                            <button class="addLanguage">Add Language</button>
+                        </div>
+
+                    </div>
+
+                    <div class="grid2 lisences">
+                        <div class="grid">
+                            <label>Licenese Type</label>
+                        </div>
+                        <div class="grid3 ">
+                            <div class="grid2">
+                                <label>Car</label>
+                                <input type="checkbox" value="Car" name="car" class="lisence">
+                            </div>
+                            <!-- <div class="grid2">
+                                <label>Bike</label>
+                                <input type="checkbox" value="Bike" name="bike" class="lisence">
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+<!----------------------------------Button----------------------------------------->
+
+            <div class="button">
+                <button id="generateCV" class="generateCV">Generate CV</button>
+            </div>
+  
+        </div>
+
+    </div>
+
+<!-- ---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+                            Back End
+----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- -->
+   
+    <div class="backend none">
+
+<!-- ------------------------peronal info ------------------------------------------- --> 
+
+        <div class="personalInformation infoDiv">
+
+            <h2 class="h2">Personal Inoformation</h2>
+
+            <table>
+
+                <tr>
+                    <th colspan="4" class="center bold">Personal Information</th>
+                </tr>
+
+                <tr>
+                    <th>First Name</th>
+                    <td class="tfname"></td>
+                    <th>Last Name</th>
+                    <td class="tlname"></td>
+                </tr>
+                
+                <tr>
+                    <th>Email Address</th>
+                    <td class="temail"> </td>
+                    <th>Phone Number</th>
+                    <td class="tnumber"></td>
+                </tr>
+
+                <tr>
+                    <th>Gender</th>
+                    <td class="tgender"> </td>
+                    <th>Date of Birth</th>
+                    <td class="tbirth"></td>
+                </tr>
+
+                <tr>
+                    <th >Nationality</th>
+                    <td class="tnationality"></td>
+                </tr>
+                
+            </table>
+        </div>
+
+<!-- ------------------------Work experince ------------------------------------------- -->
+
+        <div class="infoDiv destination">
+            <h2>Last Work Experience</h2>
+            <table>
+                <tr>
+                    <th colspan="4" class="center bold">Last Work Experience</th>
+                </tr>
+            <tr>
+                <th>Company Name</th>
+                <td class="tcompany">   </td>
+                <th>Destination Name</th>
+                <td class="tdestination"></td>
+            </tr>
+            <tr>
+                <th>From</th>
+                <td class="tfrom"> </td>
+                <th>To</th>
+                <td class="tto"> </td>
+            </tr>
+    
+        </table>
+
+    </div>
+<!-- ------------------------Computer skills ------------------------------------------- --> 
+
+    <div class="infoDiv computerSkills">
+        <h2>Computer Skills</h2>
+
+        <table>
+            <tr>
+                <th colspan="2" class="center bold">Computer Skills</th>
+            </tr>
+            <tr>
+                <th>Langauge</th>
+                <th>Level</th>
+            </tr>
+
+            <tr>
+                <td class="tplanguage"></td>
+                <td class="tplevel"></td>
+            </tr>
+        </table>
+        
+        
+    </div>
+
+<!-- ------------------------Other skills ------------------------------------------- --> 
+
+    <div class="infoDiv otherSkills">
+
+        <h2>Other Skills</h2>
+        <table>
+            
+            <tr>
+                <th colspan="4" class="center bold">Other Skills</th>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <th>Comprehension</th>
+                <th>Reading</th>
+                <th>Writing</th>
+            </tr>
+
+            <tr>
+                <td class="tlanguage"> </td>
+                <td class="tcomprehension"> </td>
+                <td class="treading"> </td>
+                <td class="twriting"> </td>
+            </tr>
+
+            <tr>
+                <th>Lisence Type</th>
+                <td colspan="3" class="tlicense"> </td>
+            </tr>
+        </table>
+    </div>
+
+
+    </div>
+
+<!-- ---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+                            End
+----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- -->
+   
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
